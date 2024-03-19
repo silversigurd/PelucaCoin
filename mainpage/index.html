@@ -32,21 +32,17 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("../images/Milei.jpg");
-            background-size: auto; /* Ajusta el tamaño de la imagen para que se adapte */
-            background-repeat: space;
+            background-image: url("../images/Leon.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         .NavBackground {
             background-color: rgba(0, 0, 0, 0.5);
-            /* Fondo semi-transparente para el título */
             padding: 10px 20px;
-            /* Añade espacio dentro del contenedor */
             display: flex;
             justify-content: space-between;
-            /* Distribuye los elementos a los extremos */
             align-items: center;
-            /* Centra verticalmente los elementos */
             font-family: "Madimi One", sans-serif;
         }
 
@@ -58,59 +54,57 @@
             color: #F8DE22;
             text-decoration: none;
             margin: 0 10px;
-            /* Añade espaciado entre los enlaces */
             font-family: "Madimi One", sans-serif;
-            /* Aplica el mismo estilo de letra a los enlaces */
         }
-        .negro{
+
+        .negro {
             background-color: black;
+        }
+
+        .pancake-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
 
-
-
     <header>
         <div class="col-12 NavBackground">
             <div style=" -webkit-text-stroke: 3px black;">
                 <h1 style="color: #F8DE22; text-decoration: double;">Peluca Coin</h1>
-            </div>            
+            </div>
             <a style="font-size: 30px;" href="#">About</a>
             <a style="font-size: 30px;" href="#">Roadmap</a>
             <a style="font-size: 30px;" href="#">How to buy</a>
             <a style="font-size: 30px;" href="#">Tokenomics</a>
         </div>
-        <div class="negro">
-
-        </div>
-
+        <div class="negro"></div>
     </header>
     <main>
-        <div class="col-6 background-container">
+        <div class="pancake-container">
+            <iframe src="https://pancakeswap.finance/swap?outputCurrency=0x9a5B4816b4acCA4A6BeD02AF973E6E55ef597F81" height="600px" width="100%" style="
+                    border: 0;
+                    margin: 0 auto;
+                    display: block;
+                    border-radius: 10px;
+                    max-width: 600px;
+                    min-width: 300px;
+                  ">
+            </iframe>
+        </div>
+        <div class="col-md-12 background-container">
             <div class="background-image"></div>
         </div>
-        <div class="col-6 negro">
-                <p>s</p>
-        </div>
-        <div>
-            <html><script async="false" type="text/javascript" src="chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in-page.js"></script><head></head><body><iframe src="https://pancakeswap.finance/swap?outputCurrency=0x9a5B4816b4acCA4A6BeD02AF973E6E55ef597F81" height="660px" width="100%" style="
-                border: 0;
-                margin: 0 auto;
-                display: block;
-                border-radius: 10px;
-                max-width: 600px;
-                min-width: 300px;
-              ">
-              "
-            /></iframe></body></html>
+        <div class="col-md-12 background-container">
+            <div class="negro"></div>
         </div>
     </main>
+   
 
-    <footer>
-
-    </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
