@@ -14,6 +14,13 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
+        @media (max-width: 768px) {
+        /* Ajustar el ancho del iframe para dispositivos móviles */
+        .pancake-container iframe {
+            width: 100%; /* Cambia el ancho al 100% */
+            height: 400px; /* Cambia la altura según tu preferencia */
+        }
+    }
         ol,
         ul {
             margin: 0;
@@ -23,7 +30,6 @@
         ol li,
         ul li {
             margin-bottom: 5px;
-            /* Ajusta el espacio entre elementos de la lista */
         }
 
         body {
@@ -52,11 +58,10 @@
             background-size: cover;
             background-repeat: no-repeat;
             filter: brightness(0.5);
-            /* Ajuste de brillo para mejorar la legibilidad del texto */
         }
 
         .NavBackground {
-            background-color: rgba(71, 96, 68, 0.5);
+            background-color: rgba(255, 255, 255, 0.2);
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
@@ -67,7 +72,6 @@
         .NavBackground h1 {
             color: #F8DE22;
             font-size: 24px;
-            /* Tamaño de fuente aumentado para mejorar la visibilidad */
         }
 
         .NavBackground a {
@@ -75,13 +79,11 @@
             text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
-            /* Tamaño de fuente aumentado para mejorar la visibilidad */
             cursor: pointer;
         }
 
         .pancake-container {
             margin-top: 20px;
-            /* Ajuste de margen superior */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -90,10 +92,8 @@
 
         .center {
             margin-top: 50px;
-            /* Añade espacio entre el contenido y el encabezado */
         }
 
-        /* Animación de resaltado */
         @keyframes highlight {
             0% {
                 color: #F8DE22;
@@ -115,26 +115,58 @@
         .telegram-link {
             display: inline-block;
             transition: transform 0.5s;
-            /* Agrega una transición suave */
         }
 
         .telegram-link:hover {
             transform: scale(1.1);
             animation: highlight 2s ease;
-            /* Escala el elemento al 110% en el hover */
         }
-        p{
+
+        p {
             font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .NavBackground {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .NavBackground h1 {
+                margin-bottom: 10px;
+            }
+
+            .NavBackground a {
+                margin: 5px 0;
+            }
+
+            .pancake-container {
+                margin-top: 40px;
+            }
+
+            .center {
+                margin-top: 20px;
+            }
+
+            .background-container {
+                display: none;
+            }
+
+            #tokenomics,
+            #roadmap {
+                width: 90%;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
 
-<body>
+<body class="col-12">
 
-    <header>
+    <header class="col-12">
         <div class="col-12 NavBackground ">
             <div>
-                <h1 >Peluca Coin</h1>
+                <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 35px;">Peluca Coin</h1>
             </div>
             <a class="nav-link telegram-link" href="#about">About</a>
             <a class="nav-link telegram-link" href="#how-to-buy">How to buy</a>
@@ -151,28 +183,40 @@
         <div id="about" class="col-md-12 text-center center">
             <h2 style="color: #F8DE22;">About</h2>
             <div class="col-8 mx-auto">
-            <h4> <strong>Introduction to Peluca Coin: The Libertarian and Reliable Cryptocurrency of the Future</strong></h4>
-            
-            <p>In an increasingly interconnected and digitized world, the emergence of cryptocurrencies has revolutionized the way we understand and conduct financial transactions. In this context, Peluca Coin arises as an innovative and reliable investment option in the vast cryptocurrency ecosystem.</p>
-            
-            <p>Peluca Coin is not merely a digital currency; it is a symbol of the libertarian and decentralized philosophy that seeks to empower individuals by granting them absolute control over their finances. Unlike traditional currencies, which are subject to the intervention of financial institutions and governments, Peluca Coin is based on blockchain technology, offering unprecedented transparency, security, and autonomy.</p>
-            
-            <p>This cryptocurrency has established itself as a reliable option due to its robust technological architecture and its commitment to the privacy and security of its users. The Peluca Coin platform utilizes advanced encryption algorithms and anonymity techniques to protect transactions and ensure user confidentiality.</p>
-            
-            <p>Peluca Coin also stands out for its active and committed community, comprised of technology enthusiasts, privacy advocates, and adherents to the libertarian philosophy. This community not only drives the development and adoption of Peluca Coin but also promotes the values of freedom, equality, and justice that are at the heart of this cryptocurrency.</p>
-            
-            <p>In summary, Peluca Coin represents a unique opportunity for those looking to diversify their investments in a reliable digital asset aligned with libertarian principles. With its focus on decentralization, security, and privacy, Peluca Coin is poised to play a fundamental role in the future of the global financial landscape.</p>
+                <h4><strong>Introduction to Peluca Coin: The Libertarian and Reliable Cryptocurrency of the
+                        Future</strong></h4>
+                <p>In an increasingly interconnected and digitized world, the emergence of cryptocurrencies has
+                    revolutionized the way we understand and conduct financial transactions. In this context, Peluca
+                    Coin arises as an innovative and reliable investment option in the vast cryptocurrency ecosystem.</p>
+                <p>Peluca Coin is not merely a digital currency; it is a symbol of the libertarian and decentralized
+                    philosophy that seeks to empower individuals by granting them absolute control over their finances.
+                    Unlike traditional currencies, which are subject to the intervention of financial institutions and
+                    governments, Peluca Coin is based on blockchain technology, offering unprecedented transparency,
+                    security, and autonomy.</p>
+                <p>This cryptocurrency has established itself as a reliable option due to its robust technological
+                    architecture and its commitment to the privacy and security of its users. The Peluca Coin platform
+                    utilizes advanced encryption algorithms and anonymity techniques to protect transactions and ensure
+                    user confidentiality.</p>
+                <p>Peluca Coin also stands out for its active and committed community, comprised of technology
+                    enthusiasts, privacy advocates, and adherents to the libertarian philosophy. This community not only
+                    drives the development and adoption of Peluca Coin, but also promotes the values of freedom,
+                    equality, and justice that are at the heart of this cryptocurrency.</p>
+                <p>In summary, Peluca Coin represents a unique opportunity for those looking to diversify their
+                    investments in a reliable digital asset aligned with libertarian principles. With its focus on
+                    decentralization, security, and privacy, Peluca Coin is poised to play a fundamental role in the
+                    future of the global financial landscape.</p>
             </div>
         </div>
-        
+    
         <div id="how-to-buy" class="col-md-12 text-center center">
             <h2 style="color: #F8DE22;">How to buy</h2>
             <div class="pancake-container">
                 <iframe src="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x9a5B4816b4acCA4A6BeD02AF973E6E55ef597F81"
-                    height="600px" width="40%" style="border: 0; display: block;"></iframe>
+                    height="600px" width="50%" style="border: 0; display: block;"></iframe>
             </div>
         </div>
-         <div id="how-to-buy" class="col-md-12 text-center center">
+    
+        <div id="team-wallets" class="col-md-12 text-center center">
             <h2 style="color: #F8DE22;">Team Wallets</h2>
             <ul>
                 <li><p> <strong>Liquidity:</strong> 0xC0D837519EB582DC7D22581652A03362fcD708c4 - 0x010913dE0fd22Ea03DEdAC3B0EdCC5Bd36CCd05B </p></li>
@@ -184,100 +228,77 @@
                 <li><strong>Incentive and Rewards Programs:</strong> 0xc2a697ec9668e917a5778f886D7D35c45Fc96d9c</li>
             </ul>
         </div>
-
+    
         <div class="col-md-12 background-container">
             <div class="background-image"></div>
         </div>
+    
         <div id="tokenomics" class="text-center center" style="width: 40%; margin: 0 auto;">
             <h2 style="color: #F8DE22;">Tokenomics</h2>
             <!-- Canvas donde se dibujará el gráfico de torta -->
             <canvas id="tokenomicsChart" width="400" height="400"></canvas>
         </div>
+    
         <div id="roadmap" class="col-md-12 text-center center">
             <h2 style="color: #F8DE22;">Roadmap</h2>
-            <ol>
-                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phase 1:</h2>
-                    <li>
-                        Community Development.
-                    </li>
-                    <li>
-                        Listing on more exchanges.
-                    </li>
-                    <li>
-                        Development of additional features.
-                    </li>
-
+            <ol style="list-style: none;">
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phase 1:</h3>
+                <li>Community Development.</li>
+                <li>Listing on more exchanges.</li>
+                <li>Development of additional features.</li>
             </ol>
-
-            <ol>
-                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phase 2:</h2>
-                    <li>
-                        Improving Liquidity.
-                    </li>
-                    <li>
-                        marketing and promotion campaigns.
-                    </li>
-                    <li>
-                        auditing and transparency.
-                    </li>
-
+            <ol style="list-style: none;">
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phase 2:</h3>
+                <li>Improving Liquidity.</li>
+                <li>Marketing and promotion campaigns.</li>
+                <li>Auditing and transparency.</li>
             </ol>
-
-            <ol>
-                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phase 3:</h2>
-                    <li>
-                        Security and Regulatory Compliance.
-                    </li>
-                    <li>
-                        Education and resources.
-                    </li>
+            <ol style="list-style: none;">
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phase 3:</h3>
+                <li>Security and Regulatory Compliance.</li>
+                <li>Education and resources.</li>
             </ol>
-
-
-
-           
         </div>
-
-      
-       
-        
-        
-        </main>
-        
-        <!-- JavaScript para inicializar el gráfico de torta -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-        <script>
-            // Datos para el gráfico de torta
-            var tokenomicsData = {
-                labels: ['On circulation', 'Team and Development', 'Foundation Reserve', 'Partnerships and Alliances', 'Incentive and Rewards Programs', 'Community and Airdrops', 'Tokens to release'],
-                datasets: [{
-                    data: [1.3257, 20, 20, 3, 3, 3,47.9863], // Porcentajes de distribución
-                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9966', '#007F73'] // Colores para cada sector
-                }]
-            };
-        
-            // Opciones de configuración del gráfico
-            var tokenomicsOptions = {
-                responsive: true
-            };
-        
-            // Obtener el contexto del lienzo
-            var ctx = document.getElementById('tokenomicsChart').getContext('2d');
-        
-            // Crear el gráfico de torta
-            var myPieChart = new Chart(ctx, {
-                type: 'pie',
-                data: tokenomicsData,
-                options: tokenomicsOptions
-            });
-        </script>
-      <footer class="text-center mt-5 py-4" style="background-color: #222;">
-        <div class="container">
-            <p style="color: #fff; font-size: 16px;">&copy; 2024 Peluca Coin. All rights reserved.</p>
-            <p style="color: #fff; font-size: 14px;">Developed by <a href="#" target="_blank" style="color: #F8DE22; text-decoration: none;">pelucacoin.com</a></p>
-        </div>
-    </footer>
     
-        </body>
-        
-        </html>
+    </main>
+    
+
+<!-- JavaScript para inicializar el gráfico de torta -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script>
+    // Datos para el gráfico de torta
+    var tokenomicsData = {
+        labels: ['On circulation', 'Team and Development', 'Foundation Reserve', 'Partnerships and Alliances', 'Incentive and Rewards Programs', 'Community and Airdrops', 'Tokens to release'],
+        datasets: [{
+            data: [1.3257, 20, 20, 3, 3, 3,47.9863], // Porcentajes de distribución
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9966', '#007F73'] // Colores para cada sector
+        }]
+    };
+
+    // Opciones de configuración del gráfico
+    var tokenomicsOptions = {
+        responsive: true
+    };
+
+    // Obtener el contexto del lienzo
+    var ctx = document.getElementById('tokenomicsChart').getContext('2d');
+
+    // Crear el gráfico de torta
+    var myPieChart = new Chart(ctx, {
+        type: 'pie',
+        data: tokenomicsData,
+        options: tokenomicsOptions
+    });
+</script>
+
+<footer class="text-center mt-5 py-4" style="background-color: #222;">
+    <div class="container">
+        <p style="color: #fff; font-size: 16px;">&copy; 2024 Peluca Coin. All rights reserved.</p>
+        <p style="color: #fff; font-size: 14px;">Developed by <a href="https://www.pelucacoin.com/" target="_blank"
+                style="color: #F8DE22; text-decoration: none;">pelucacoin.com</a></p>
+    </div>
+</footer>
+
+</body>
+
+</html>
